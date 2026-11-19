@@ -20,7 +20,14 @@ function renderProducts() {
 
   grid.innerHTML = filtered.map(product => `
     <article class="product-card">
-      <div class="product-visual" aria-hidden="true">${product.icon}</div>
+      <div class="product-visual">
+        ${product.image
+          ? `<img src="${product.image}" alt="${product.name}" loading="lazy"
+               onerror="this.style.display='none';this.nextElementSibling.hidden=false">`
+          : ""
+        }
+        <span class="product-fallback" ${product.image ? "hidden" : ""}>${product.icon}</span>
+      </div>
       <div class="product-info">
         <span class="product-category">${product.category}</span>
         <h3>${product.name}</h3>

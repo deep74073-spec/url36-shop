@@ -7,11 +7,12 @@ const amazonSearch = (query) =>
 const products = [
   {
     id:"power-bank-20000",
+    image:"assets/products/power-bank.jpg",
     name:"20,000mAh Fast Charging Power Bank",
     category:"Tech",
     icon:"🔋",
     description:"Extra battery backup for travel, work and everyday use.",
-    amazonUrl:amazonSearch("20000mah fast charging power bank")
+    amazonUrl:"https://link.amazon/B083IMvHp"
   },
   {
     id:"mini-power-bank",
@@ -31,19 +32,21 @@ const products = [
   },
   {
     id:"type-c-cable",
+    image:"assets/products/charging-cable.jpg",
     name:"Braided Type-C Fast Charging Cable",
     category:"Tech",
     icon:"🔗",
     description:"A useful everyday replacement cable for compatible devices.",
-    amazonUrl:amazonSearch("braided type c fast charging cable")
+    amazonUrl:"https://link.amazon/B0dXhkP2E"
   },
   {
     id:"wireless-earbuds",
+    image:"assets/products/wireless-earbuds.jpg",
     name:"Wireless Bluetooth Earbuds",
     category:"Tech",
     icon:"🎧",
     description:"Explore earbuds for music, calls and daily commuting.",
-    amazonUrl:amazonSearch("bluetooth wireless earbuds")
+    amazonUrl:"https://link.amazon/B07AGnZSz"
   },
   {
     id:"bluetooth-neckband",
@@ -95,11 +98,12 @@ const products = [
   },
   {
     id:"motion-light",
+    image:"assets/products/motion-sensor-light.jpg",
     name:"Motion Sensor LED Night Light",
     category:"Home",
     icon:"🚨",
     description:"Automatic lighting for wardrobes, stairs and corridors.",
-    amazonUrl:amazonSearch("rechargeable motion sensor led night light")
+    amazonUrl:"https://link.amazon/B0hQMmiX0"
   },
   {
     id:"smart-bulb",
@@ -119,11 +123,12 @@ const products = [
   },
   {
     id:"mini-fan",
+    image:"assets/products/portable-fan.jpg",
     name:"Rechargeable Portable Mini Fan",
     category:"Lifestyle",
     icon:"🌀",
     description:"Compact cooling for desks, travel and outdoor use.",
-    amazonUrl:amazonSearch("rechargeable portable mini fan")
+    amazonUrl:"https://link.amazon/B0e12HpHC"
   },
   {
     id:"electric-lighter",
