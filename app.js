@@ -25,10 +25,13 @@ function renderProducts() {
         <span class="product-category">${product.category}</span>
         <h3>${product.name}</h3>
         <p>${product.description}</p>
-        ${product.amazonUrl
-          ? `<a class="product-link ready" href="${product.amazonUrl}" target="_blank" rel="sponsored nofollow noopener">View on Amazon ↗</a>`
-          : `<span class="product-link">Product link coming soon</span>`
-        }
+        <span class="price-note">Check latest price on Amazon</span>
+        <a class="product-link ready"
+           href="${product.amazonUrl}"
+           target="_blank"
+           rel="sponsored nofollow noopener">
+           Check Price on Amazon ↗
+        </a>
       </div>
     </article>
   `).join("");
